@@ -1,0 +1,36 @@
+﻿ac 760 未找到结果位置|||ac
+^结果在ac, 位置为 .*|检查是否在ac排序时被PK掉|失败|ac
+在 ac 中找到调权信息, 但未进 760|检查是否在ac排序时被PK掉|成功|ac
+未找到 ac 调权信息|检查结果是否被ac屏蔽|失败|ac
+结果未进 ac|检查结果是否进入ac|失败|ac
+未找到 ac merge bc 后结果信息|检查结果是否被ac截断|成功|ac
+ac merge bc 时被截断/丢弃|检查结果是否被ac截断|成功|ac
+找到 ac merge bc 后结果信息|检查结果是否被ac截断|失败|ac
+未找到 ac 屏蔽信息|检查结果是否被ac屏蔽|失败|ac
+^结果在 ac 被屏蔽 , 屏蔽信息:.*|检查结果是否被ac屏蔽|成功|ac
+bc 未向 ac 返回此条结果|检查bc是否向ac返回此条结果|失败|bc
+bc 向 ac 返回此条结果|检查bc是否向ac返回此条结果|成功|bc
+ac merge bc 之前丢失|检查bc是否向ac返回此条结果|成功|bc
+^结果在bc被屏蔽 , 屏蔽信息:.*|检查结果是否被bc屏蔽|成功|bc
+未找到 bc 结果屏蔽信息|检查结果是否被bc屏蔽|失败|bc
+结果在bc消失, 被类聚|检查结果是否被bc类聚|成功|bc
+^类聚信息.*|检查结果是否被bc类聚|成功|bc
+结果在bc消失, 原因为权值不够被截断|检查结果是否被bc截断|成功|bc
+未找到 bc 类聚信息|检查结果是否被bc类聚|失败|bc
+结果未到 bc|检查结果是否到达bc|失败|bc
+结果到达 bc|检查结果是否到达bc|成功|bc
+在 bc 中丢失，原因未知|||bc
+结果在bc消失, 原因可能为被其它结果类聚|||bs
+未找到bs brief信息, 结果可能没有到达bc|检查结果bs是否返回结果|失败|bs
+^找到bs截断信息:.*|检查结果是否被bs截断|成功|bs
+结果在bs被截断|检查结果是否被bs截断|失败|bs
+^找到bs类聚信息:.*|检查结果是否被bs类聚|成功|bs
+结果在bs被类聚|检查结果是否被bs类聚|失败|bs
+结果在bs消失 , 可能是截断导致的|||bs
+未找到bs weight信息, 结果没有到达bs|检查结果是否到达bs|失败|bs
+结果在 bs 未命中 term|检查结果是否已经建库|成功|buildMissModule
+BS 库中无此 url|检查结果是否已经建库|失败|buildMissModule
+^spider 关于 .* 的追查结论\(详见页面上方的 覆盖率 工具\):$|||spiderMissModule 
+http://m1-spi-eye4.m1.baidu.com:8088/siteinfo/getinfo.php?url=".$url|||spiderMissModule 
+^spider 查询失败:.*|||spiderMissModule 
+^需要输入归一化的 url ，试试 \"\..*\.\"/\"|||spiderMissModule 
